@@ -20,25 +20,24 @@
         <section class="container">
           <a href="#"><h1>Feedr</h1></a>
           <nav id="loginContainer">
+          </nav>
+        </section>
+      </header>
             <!-- If not logged in -->
             {{#if loggedIn}}
             <span class="username">{{username}}</span>
             {{else}}
-
-            <!-- <div class="form-inline">
-              <div class="form-group">
-                <input type="text" class="form-control" id="username" placeholder="Username">
-              </div>
+              <div class="form-inline">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="username" placeholder="Username">
+                </div>
               <button type="submit" class="btn btn-default" id="loginSubmit">Login</button>
-            </div> -->
+            </div>
           </nav>
         </section>
       </header>
 
       <section id="categories" class="container">
-      </section>
-
-      <section id="main" class="container">
         <span class="label label-default">long-form</span>
         <span class="label label-primary">entertainment</span>
         <span class="label label-primary">world</span>
@@ -50,6 +49,13 @@
         <span class="label label-default">drugs</span>
         <span class="label label-default">music</span>
         <span class="label label-default">lifestyle</span>
+      </section>
+
+      <section id="main" class="container">
+        <article class="article-row">
+          <section class="featuredImage col-sm-2">
+             <img src="http://i.amz.mshcdn.com/wB2HLbw1XpLwzQBnaQivWm-KD_4=/950x534/https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com%2Fuploads%2Fstory%2Fthumbnail%2F15170%2Fsddefault.jpg">
+          </section>
       </section>
 
 
