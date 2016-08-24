@@ -58,7 +58,7 @@
           </section>
       </section>
 
-
+    {{#if loggedIn}}
       {{#each articles}}
         <article class="article row">
           <section class="featuredImage col-sm-2">
@@ -71,6 +71,8 @@
           </section>
           <section class="source col-sm-2">
             {{source}}</br>
+           {{#if bookmarked}}
+            <span class="label label-primary">bookmarked</span>
           </section>
         </article>
       {{/each}}
