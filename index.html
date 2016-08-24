@@ -24,18 +24,18 @@
         </section>
       </header>
             <!-- If not logged in -->
-            {{#if loggedIn}}
-            <span class="username">{{username}}</span>
-            {{else}}
-              <div class="form-inline">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="username" placeholder="Username">
-                </div>
-              <button type="submit" class="btn btn-default" id="loginSubmit">Login</button>
-            </div>
-          </nav>
-        </section>
-      </header>
+      <script id="login-template" type="text/x-handlebars-template">
+      {{#if loggedIn}}
+        <span class="username">{{username}}</span>
+      {{else}}
+        <div class="form-inline">
+          <div class="form-group">
+            <input type="text" class="form-control" id="username" placeholder="Username">
+          </div>
+          <button type="submit" class="btn btn-default" id="loginSubmit">Login</button>
+        </div>
+      </script>
+
 
       <section id="categories" class="container">
         <span class="label label-default">long-form</span>
